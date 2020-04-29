@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,34 +8,28 @@
   <link rel="styleshet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/style.css">
 </head>
+
 <body>
+
   <div class="page">
+
     <header class="header">
-
-      <!--ToDo: в блоке хидер не забыть проверить все отступы от краев страницы, чтоб соответствовали заданию-->
-      <!--ToDo: сделать через классы отображения картинок тоже-->
-      <!--ToDo: проверить, чтоб логотипы были на одном уровне-->
-
       <div class="header__title">Hаучиться учиться</div>
-        <img class="header__logo_place_header logo" src="images/logo_place_header.svg" alt="header logo">
-      <div class="header__subtitle_place_header">Какие современные и эффективные подходы к обучению вы
-          можете использовать в своей жизни? <a href="#">Узнать</a></div>
-      <img class="header__main-illustration" src="images/header-image.png" alt="header image">
+        <img class="logo logo_place_header" src="images/logo_place_header.svg" alt="header logo">
+      <div class="header__subtitle">Какие современные и эффективные подходы к обучению вы
+          можете использовать в своей жизни? <a class="header__link" href="#">Узнать</a></div>
+      <img class="header__main-illustration" src="images/header-image.png" alt="header main illustration">
       <div class="header__square-pic"></div>
-
     </header>
 
-
-
     <main class="content">
-      <section class="description">
 
-        <div class="two-columns two-columns_center">
+      <section class="description">
+        <div class="two-columns">
           <div class="two-columns__brief">
               Главные проблемы в обучении
           </div>
           <div class="two-columns__main-text">
-
             <div class="two-columns__paragraph">
                 Ни в школе, ни в институте нас не учат тому, как правильно
                 изучать материал. Мы готовимся к экзаменам и учим билеты. Мы тренируемся решать однообразные
@@ -48,77 +43,62 @@
                 Конкретные техники и упражнения помогают изменить подход к обучению, сделать его эффективным и
                 захватывающим. Эти же техники применяются на примере обучения в Практикуме.
             </div>
-
           </div>
         </div>
-
       </section>
 
       <section class="digits">
-
-<!--ToDo: в этой секции можно все блоки и элементы "освободить" от позиционирования, не стал
-этого делать, т.к. в задании такую задачу не поставили. Если ревью потребуют - сделаю -->
-
-          <div class="section-title">Цифры и факты</div>
-          <div class="section-subtitle">Про учёбу и мозг</div>
-
-          <ul class="table">
-            <li class="table__cell">
-              <div class="table__heading">85 миллиардов</div>
-              <div class="table__text">Число нейронов в мозге человека</div>
-            </li>
-            <li class="table__cell">
-              <div class="table__heading">2.1 миллиарда</div>
-              <div class="table__text">Число нуждающихся в повышении квалификации</div>
-              <div class="table__text">Всемирный Банк, 2017</div>
-            </li>
-            <li class="table__cell">
-              <div class="table__heading">1000 терабайт</div>
-              <div class="table__text">Объём памяти человека</div>
-            </li>
-            <li class="table__cell">
-              <div class="table__heading">500 триллионов</div>
-              <div class="table__text">Число ответственных за обучение нервных синапсов у
+        <div class="section-title">Цифры и факты</div>
+        <div class="section-subtitle">Про учёбу и мозг</div>
+        <ul class="table">
+          <li class="table__cell">
+            <div class="table__heading">85 миллиардов</div>
+            <div class="table__text">Число нейронов в мозге человека</div>
+          </li>
+          <li class="table__cell">
+            <div class="table__heading">2.1 миллиарда</div>
+            <div class="table__text">Число нуждающихся в повышении квалификации</div>
+            <div class="table__text">Всемирный Банк, 2017</div>
+          </li>
+          <li class="table__cell">
+            <div class="table__heading">1000 терабайт</div>
+            <div class="table__text">Объём памяти человека</div>
+          </li>
+          <li class="table__cell">
+            <div class="table__heading">500 триллионов</div>
+            <div class="table__text">Число ответственных за обучение нервных синапсов у
                 взрослого человека</div>
-            </li>
-            <li class="table__cell">
-              <div class="table__heading">420 миллионов</div>
-              <div class="table__text">Число взрослых людей моложе 25 лет, не имеющих образования
+          </li>
+          <li class="table__cell">
+            <div class="table__heading">420 миллионов</div>
+            <div class="table__text">Число взрослых людей моложе 25 лет, не имеющих образования
                 для трудоустройства</div>
-              <div class="table__text">Всемирный Банк, 2017</div>
-            </li>
-            <li class="table__cell">
-              <div class="table__heading">17–20 лет</div>
-              <div class="table__text">Пик обучаемости</div>
-            </li>
-            <li class="table__cell">
-              <div class="table__heading">1885 год</div>
-              <div class="table__text">Открытие кривой забывания</div>
-            </li>
-            <li class="table__cell">
-              <div class="table__heading">1889 год</div>
-              <div class="table__text">Открытие условного рефлекса</div>
-            </li>
-          </ul>
-
+            <div class="table__text">Всемирный Банк, 2017</div>
+          </li>
+          <li class="table__cell">
+            <div class="table__heading">17–20 лет</div>
+            <div class="table__text">Пик обучаемости</div>
+          </li>
+          <li class="table__cell">
+            <div class="table__heading">1885 год</div>
+            <div class="table__text">Открытие кривой забывания</div>
+          </li>
+          <li class="table__cell">
+            <div class="table__heading">1889 год</div>
+            <div class="table__text">Открытие условного рефлекса</div>
+          </li>
+        </ul>
       </section>
 
       <section class="feinman">
-
         <div class="feynman__title">Метод Фейнмана</div>
-
         <div class="feynman__subtitle">Выучить и не забыть</div>
-
         <a class="feynman__link" href="#">Подробнее&rarr;</a>
-
         <div class="feynman__image"></div>
-
       </section>
 
       <section class="kaufman">
-
         <div class="section-title section-title_theme_dark">Принципы обучения</div>
-
         <div class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</div>
 
 <!--У номерованного списка точки убирать не умею, если принципиально - переделаю на вариант без точек,
@@ -157,48 +137,35 @@
           </li>
         </ol>
         <div class="kaufman__triangle"></div>
-
       </section>
 
     </main>
+
     <footer class="footer">
       <div class="footer__columns">
-        <div class="footer__columns_content_copyright">
-          <img class="footer__logo_place_footer logo" src="images/logo_place_footer.svg" alt="footer logo">
+        <div class="footer__column footer__column_content_copyright">
+          <img class="logo logo_place_footer" src="images/logo_place_footer.svg" alt="footer logo">
           <div class="footer__author">&copy; 2019. Виктор Абанькин</div>
         </div>
-
-        <div class="footer__columns_content_info">
+        <div class="footer__column footer__column_content_info">
           <div class="footer__column-heading">О Практикуме</div>
           <ul class="footer__column-links">
-            <li class="footer__column-row-margin"><a class="footer__column-links-a" href="#">Главная</a></li>
-            <li class="footer__column-row-margin"><a class="footer__column-links-a" href="#">Концепция</a></li>
-            <li class="footer__column-row-margin"><a class="footer__column-links-a" href="#">Наставники</a></li>
+            <li class="footer__column-row-bottom-margin"><a class="footer__column-links-a" href="#">Главная</a></li>
+            <li class="footer__column-row-bottom-margin"><a class="footer__column-links-a" href="#">Концепция</a></li>
+            <li class="footer__column-row-bottom-margin"><a class="footer__column-links-a" href="#">Наставники</a></li>
           </ul>
         </div>
-
-        <div class="footer__columns_content_social">
+        <div class="footer__column footer__column_content_social">
           <div class="footer__column-social-heading">Соцсети</div>
           <div class="footer__social-icon">
-            <div class="footer__column-row-margin"><a class="footer__social-icon-a" href="#"><img class="footer__social-icon-img" src="images/facebook_color_white.svg">Facebook</a></div>
-            <div class="footer__column-row-margin"><a class="footer__social-icon-a" href="#"><img class="footer__social-icon-img" src="images/vk_color_white.svg">ВКонтакте</a></div>
-            <div class="footer__column-row-margin"><a class="footer__social-icon-a" href="#"><img class="footer__social-icon-img" src="images/instagram_color_white.svg">Instargam</a></div>
+            <div class="footer__column-row-bottom-margin"><a class="footer__social-icon-a" href="#"><img class="footer__social-icon-img" src="images/facebook_color_white.svg">Facebook</a></div>
+            <div class="footer__column-row-bottom-margin"><a class="footer__social-icon-a" href="#"><img class="footer__social-icon-img" src="images/vk_color_white.svg">ВКонтакте</a></div>
+            <div class="footer__column-row-bottom-margin"><a class="footer__social-icon-a" href="#"><img class="footer__social-icon-img" src="images/instagram_color_white.svg">Instargam</a></div>
           </div>
-
-
         </div>
-
-
       </div>
-
-
-
     </footer>
+
   </div>
 </body>
 </html>
-
-
-<!-- Эта строка для проверки Git и того, как он восстанавливает иформацию и версии файлов, сделан 28.04.2020 0:45-->
-
-<!-- Эта строка для проверки Git и того, как он восстанавливает иформацию и версии файлов, сделан 28.04.2020 0:53-->

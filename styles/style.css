@@ -1,8 +1,3 @@
-/* {
-  border: 1px solid red;
-  моё правило для подсветки границ блоков макета
-} */
-
  body {
   margin: 0;
 }
@@ -35,6 +30,7 @@
   font-weight: bold;
   line-height: 96px;
   width: 730px;
+  margin: 0;
   margin-left: 64px;
 }
 
@@ -43,6 +39,7 @@
 }
 
 .header__subtitle {
+  margin: 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -86,7 +83,6 @@
 }
 
 .description {
- /* display: flex; */
   padding-top: 100px;
 }
 
@@ -97,6 +93,7 @@
 }
 
 .two-columns__brief {
+  margin: 0;
   width: 175px;
   line-height: 1.2;
   font-size: 18px;
@@ -107,12 +104,10 @@
 .two-columns__main-text {
   min-width: 784px;
   width: 80%;
- /* display:flex; */
- /* flex-direction: column; */
-  /* justify-content: space-between; */
 }
 
 .two-columns__paragraph {
+  margin: 0;
   font-size: 24px;
   line-height: 34px;
   font-weight: normal;
@@ -132,8 +127,6 @@
 .digits {
   padding-top: 100px;
   padding-bottom: 100px;
- /* display: flex; */
-  /* flex-direction: column; */
 }
 
 .section-title {
@@ -171,12 +164,14 @@
 }
 
 .table__heading {
+  margin: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
 }
 
 .table__text {
+  margin: 0;
   margin-top: 20px;
   line-height: 1.2;
   font-size: 18px;
@@ -229,15 +224,12 @@
   color: black;
 }
 
-.kaufman
- {
+.kaufman {
   padding-top: 90px;
   padding-bottom: 90px;
-  /* display: flex; */
-  /* flex-direction: column; */
   background-color: black;
   position: relative;
-  /* overflow: hidden; */
+  overflow: hidden;
   z-index: -2;
 }
 
@@ -247,13 +239,6 @@
 
 .section-subtitle_theme_dark {
   color: white;
-}
-
-.table_theme_dark {
-  list-style-type: decimal ;
-  list-style-position: inside;
-  font-size: 24px;
-  font-weight: bold;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -304,8 +289,8 @@
 }
 
 .footer__column-heading {
+  margin: 0px 0px 20px 0px;
   color: white;
-  margin-bottom: 20px;
 }
 
 .footer__column-links {
@@ -319,6 +304,7 @@
 }
 
 .footer__column-social-heading {
+  margin: 0px 0px 20px 0px;
   color: white;
   margin-bottom: 20px;
 }
@@ -342,17 +328,3 @@
 .footer__column-row-bottom-margin {
   margin-bottom: 16px;
 }
-
-/*
-Пустые классы - не нашел им применения:
-
-.footer_column {
-}
-
-.footer__column_content_info {
- }
-
- .footer__column_content_social {
- }
-*/
-

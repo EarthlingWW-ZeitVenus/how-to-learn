@@ -9,15 +9,15 @@
   <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body>
+<body class="body-margin-zero">
 
   <div class="page">
 
     <header class="header">
       <h1 class="header__title">Hаучиться учиться</h1>
         <img class="logo logo_place_header" src="images/logo_place_header.svg" alt="header logo">
-      <h4 class="header__subtitle">Какие современные и эффективные подходы к обучению вы
-          можете использовать в своей жизни? <a class="header__link" href="#">Узнать</a></h4>
+        <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы
+          можете использовать в своей жизни? <a class="header__link" href="#">Узнать &rarr;</a></p>
       <img class="header__main-illustration" src="images/header-image.png" alt="header main illustration">
       <div class="header__square-pic"></div>
     </header>
@@ -26,9 +26,14 @@
 
       <section class="description">
         <div class="two-columns">
-          <p class="two-columns__brief">
+
+<!-- Сделал тут загаловок четвертого уровня, т.к. это остался единственный "Warning" валидатора, ему не
+нравилось, что в данной секции нет ни одного заголовка. Дал заголовок брифу, это, вроде как, не противоречит
+логической структуре текста брифа -->
+
+          <h4 class="two-columns__brief">
               Главные проблемы в обучении
-          </p>
+          </h4>
           <div class="two-columns__main-text">
             <p class="two-columns__paragraph">
                 Ни в школе, ни в институте нас не учат тому, как правильно
@@ -49,7 +54,7 @@
 
       <section class="digits">
         <h2 class="section-title">Цифры и факты</h2>
-        <h3 class="section-subtitle">Про учёбу и мозг</h3>
+        <p class="section-subtitle">Про учёбу и мозг</p>
         <ul class="table">
           <li class="table__cell">
             <h4 class="table__heading">85 миллиардов</h4>
@@ -99,46 +104,39 @@
 
       <section class="kaufman">
         <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
-        <h3 class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</h3>
+        <p class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</p>
+
+<!-- Мне первый вариант тоже больше нравился - выполняю ваше пожелание "можно лучше" -->
+
         <ol class="table table_theme_dark">
-          <li class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading table__heading_theme_dark">1</h4>
+          <li class="table__heading table__cell table__cell_theme_dark">
             <p class="table__text table__text_theme_dark">Выберите привлекательный проект.</p>
           </li>
-          <li class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading table__heading_theme_dark">2</h4>
+          <li class="table__heading table__cell table__cell_theme_dark">
             <p class="table__text table__text_theme_dark">Сосредоточьтесь на каком-то одном навыке.</p>
           </li>
-          <li class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading table__heading_theme_dark">3</h4>
+          <li class="table__heading table__cell table__cell_theme_dark">
             <p class="table__text table__text_theme_dark">Определите целевой уровень мастерства.</p>
           </li>
-          <li class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading table__heading_theme_dark">4</h4>
+          <li class="table__heading table__cell table__cell_theme_dark">
             <p class="table__text table__text_theme_dark">Разбейте навык на элементы.</p>
           </li>
-          <li class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading table__heading_theme_dark">5</h4>
+          <li class="table__heading table__cell table__cell_theme_dark">
             <p class="table__text table__text_theme_dark">Приготовьте всё необходимое для занятий.</p>
           </li>
-          <li class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading table__heading_theme_dark">6</h4>
+          <li class="table__heading table__cell table__cell_theme_dark">
             <p class="table__text table__text_theme_dark">Устраните препятствия для занятий.</p>
           </li>
-          <li class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading table__heading_theme_dark">7</h4>
+          <li class="table__heading table__cell table__cell_theme_dark">
             <p class="table__text table__text_theme_dark">Выделите специальное время для занятий.</p>
           </li>
-          <li class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading table__heading_theme_dark">8</h4>
+          <li class="table__heading table__cell table__cell_theme_dark">
             <p class="table__text table__text_theme_dark">Создайте быстрые петли обратной связи.</p>
           </li>
-          <li class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading table__heading_theme_dark">9</h4>
+          <li class="table__heading table__cell table__cell_theme_dark">
             <p class="table__text table__text_theme_dark">Занимайтесь по расписанию, короткими интенсивными интервалами.</p>
           </li>
-          <li class="table__cell table__cell_theme_dark">
-            <h4 class="table__heading table__heading_theme_dark">10</h4>
+          <li class="table__heading table__cell table__cell_theme_dark">
             <p class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</p>
           </li>
         </ol>
@@ -147,28 +145,38 @@
 
     </main>
 
+<!--По блоку "footer" оставил комментарии в файле стилей-->
+
     <footer class="footer">
       <div class="footer__columns">
         <div class="footer__column footer__column_content_copyright">
           <img class="logo logo_place_footer" src="images/logo_place_footer.svg" alt="footer logo">
           <p class="footer__author">&copy; 2019. Виктор Абанькин</p>
         </div>
-        <div class="footer__column footer__column_content_info">
+        <nav class="footer__column footer__column_content_info">
           <h4 class="footer__column-heading">О Практикуме</h4>
           <ul class="footer__column-links">
-            <li class="footer__column-row-bottom-margin"><a class="footer__column-links-a" href="#">Главная</a></li>
-            <li class="footer__column-row-bottom-margin"><a class="footer__column-links-a" href="#">Концепция</a></li>
-            <li class="footer__column-row-bottom-margin"><a class="footer__column-links-a" href="#">Наставники</a></li>
+
+<!-- Вы писали - "1. БЭМ сущность footer__column-row-bottom-margin не объявлена в брифе, необходимо ее
+  удалить во всем блоке 2. БЭМ сущность footer__column-links-a не объявлена в брифе, необходимо ее удалить
+  во всем блоке" - т.е. мне оставить стандартные теги без привязки к классам? Пока просто переименовал свои
+  классы в другие. Оперировать буду только теми, что в брифе, но ссылки, насколько понимаю, все равно придется
+  переопределить по цвету и убрать подчеркивание и все равно придется к ним как-то обращаться (по какому-то
+  селектору класса или тега - или я не прав?) -->
+
+            <li class="footer__column-infopart"><a class="footer__column-infolink" href="#">Главная</a></li>
+            <li class="footer__column-infopart"><a class="footer__column-infolink" href="#">Концепция</a></li>
+            <li class="footer__column-infopart"><a class="footer__column-infolink" href="#">Наставники</a></li>
           </ul>
-        </div>
-        <div class="footer__column footer__column_content_social">
-          <h4 class="footer__column-social-heading">Соцсети</h4>
-          <div class="footer__social-icon">
-            <p class="footer__column-row-bottom-margin"><a class="footer__social-icon-a" href="#"><img class="footer__social-icon-img" src="images/facebook_color_white.svg" alt="facebook logo">Facebook</a></p>
-            <p class="footer__column-row-bottom-margin"><a class="footer__social-icon-a" href="#"><img class="footer__social-icon-img" src="images/vk_color_white.svg" alt="facebook logo">ВКонтакте</a></p>
-            <div class="footer__column-row-bottom-margin"><a class="footer__social-icon-a" href="#"><img class="footer__social-icon-img" src="images/instagram_color_white.svg" alt="instagram logo">Instargam</a></div>
-          </div>
-        </div>
+        </nav>
+        <nav class="footer__column footer__column_content_social">
+          <h4 class="footer__column-heading">Соцсети</h4>
+          <ul class="footer__social-icon">
+            <li class="footer__column-socialpart"><a class="footer__icon-sociallink" href="#"><img class="footer__social-icon-img" src="images/facebook_color_white.svg" alt="facebook logo">Facebook</a></li>
+            <li class="footer__column-socialpart"><a class="footer__icon-sociallink" href="#"><img class="footer__social-icon-img" src="images/vk_color_white.svg" alt="facebook logo">ВКонтакте</a></li>
+            <li class="footer__column-socialpart"><a class="footer__icon-sociallink" href="#"><img class="footer__social-icon-img" src="images/instagram_color_white.svg" alt="instagram logo">Instargam</a></li>
+          </ul>
+        </nav>
       </div>
     </footer>
 

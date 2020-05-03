@@ -1,9 +1,5 @@
- /* {
+  /* {
   border: 1px solid red;
-} */
-
-/* .body_margin_zero {
-  margin: 0;
 } */
 
 .page {
@@ -275,6 +271,7 @@
   position: absolute;
   top: 0;
   right: -210px;
+  background-size: contain;
   z-index: -1;
 }
 

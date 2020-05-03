@@ -9,7 +9,11 @@
   <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body class="body-margin-zero">
+<!-- Если я убираю класс ".body_margin_zero" у меня появляются внешние поля вокруг body и нарушаются
+расстояния относительно краев окошка, но не от body. Если это не кретично, то ладно. Я закомментировал
+".body_margin_zero" в файле стилей -->
+
+<body class="body_margin_zero">
 
   <div class="page">
 
@@ -97,7 +101,7 @@
 
       <section class="feinman">
         <h2 class="feynman__title">Метод Фейнмана</h2>
-        <h3 class="feynman__subtitle">Выучить и не забыть</h3>
+        <p class="feynman__subtitle">Выучить и не забыть</p>
         <a class="feynman__link" href="#">Подробнее&rarr;</a>
         <div class="feynman__image"></div>
       </section>

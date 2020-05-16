@@ -1,0 +1,17 @@
+@keyframes block-rotate {
+    from {
+
+/* По брифу обозначенно что надобно наклонить фигуру header__square-pic на 15 градусов против
+часовой стрелки. Чтоб убрать некрасивый "скачок" в положение "минус 15" в начале каждой
+итерации анимации, отразил начальный наклон в "минус 15" в самой анимации */
+
+    transform: rotate(0deg);
+}
+to {
+    transform: rotate(360deg);
+}
+}
+
+.blocks-rotation {
+  animation: block-rotate 20s linear infinite;
+}

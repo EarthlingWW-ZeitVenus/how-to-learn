@@ -5,8 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Научиться учиться</title>
-  <link rel="stylesheet" href="styles/normalize.css">
-  <link rel="stylesheet" href="styles/style.css">
+  <!-- <link rel="stylesheet" href="styles/normalize.css"> -->
+  <link rel="stylesheet" href="pages/index.css">
+  <!-- <link rel="stylesheet" href="styles/style.css"> -->
 </head>
 
 <body>
@@ -17,20 +18,15 @@
       <h1 class="header__title">Hаучиться учиться</h1>
         <img class="logo logo_place_header" src="images/logo_place_header.svg" alt="header logo">
         <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы
-          можете использовать в своей жизни? <a class="header__link" href="#">Узнать &rarr;</a></p>
+          можете использовать в своей жизни? <a class="header__link all-links-transition" href="#">Узнать &rarr;</a></p>
       <img class="header__main-illustration" src="images/header-image.png" alt="header main illustration">
-      <div class="header__square-pic"></div>
+      <div class="header__square-pic blocks-rotation"></div>
     </header>
 
     <main class="content">
 
       <section class="description">
         <div class="two-columns">
-
-<!-- Сделал тут загаловок четвертого уровня, т.к. это остался единственный "Warning" валидатора, ему не
-нравилось, что в данной секции нет ни одного заголовка. Дал заголовок брифу, это, вроде как, не противоречит
-логической структуре текста брифа -->
-
           <h4 class="two-columns__brief">
               Главные проблемы в обучении
           </h4>
@@ -50,6 +46,75 @@
             </p>
           </div>
         </div>
+      </section>
+
+      <section class="techniques">
+        <h2 class="section-title section-title_line_height">Техники обучения</h2>
+        <p class="section-subtitle">Пять практик от Барбары Оакли</p>
+        <ul class="cards">
+          <li class="cards__item">
+            <img class="cards__image" src="images/cards-attention.png" alt="image cards-attention">
+            <h4 class="cards__title">Два вида внимания</h4>
+            <p class="cards__description">Глубокие знания возникают, если чередовать сфокусированное и рассеянное
+                мышление.</p>
+          </li>
+          <li class="cards__item">
+            <img class="cards__image" src="images/cards-recall.png" alt="image cards-recall">
+            <h4 class="cards__title">Recall</h4>
+            <p class="cards__description">Вспоминайте изученное — это позволит соединить разрозненные порции
+                памяти.</p>
+          </li>
+          <li class="cards__item">
+            <img class="cards__image" src="images/cards-interliving.png" alt="image cards-interliving">
+            <h4 class="cards__title">Интерливинг</h4>
+            <p class="cards__description">Изучайте несколько навыков одновременно, они обогащают друг друга.</p>
+          </li>
+          <li class="cards__item">
+            <img class="cards__image" src="images/cards-question.png" alt="image cards-question">
+            <h4 class="cards__title">Вопросы</h4>
+            <p class="cards__description">Слушая преподавателя, придумывайте хороший вопрос, который вас
+                действительно волнует.</p>
+          </li>
+          <li class="cards__item">
+            <img class="cards__image" src="images/cards-competence.png" alt="image cards-competence">
+            <h4 class="cards__title">Иллюзия компетентности</h4>
+            <p class="cards__description">Повторите про себя, запишите, расскажите другу: вам только кажется,
+                что вы владеете новой темой.</p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="video">
+        <h2 class="section-title section-title_line_height">Видео на TED</h2>
+        <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
+        <div class="video__iframes">
+          <!-- <iframe class="video__iframe" width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+          <iframe class="video__iframe" width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="video__iframe" width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+      </section>
+
+      <section class="oakley">
+        <div class="two-columns">
+          <h4 class="two-columns__brief">История Барбары Оакли.</h4>
+          <div class="two-columns__main-text">
+            <p class="two-columns__paragraph">С детства Барбаре не давалась математика. Она считала себя
+                законченным гуманитарием, причём далеко не самым умным. В армии она изучала русский язык,
+                чтобы получить надбавку, да так успешно, что её выдвинули в командиры. Но для продвижения
+                по службе нужно было сдавать математику. И тогда Барбара придумала свой подход к точным
+                наукам. Оказалось, если вам что-то «плохо даётся», ваши добытые трудом знания гораздо глубже,
+                чем у тех, кому всё ясно с первого взгляда.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="feinman">
+        <h2 class="feynman__title">Метод Фейнмана</h2>
+        <p class="feynman__subtitle">Выучить и не забыть</p>
+        <a class="feynman__link all-links-transition" href="#">Подробнее&rarr;</a>
+        <img class="feynman__image" src="images/feynman.png" alt="feynman image">
+        <!-- <div class="feynman__image"></div> -->
       </section>
 
       <section class="digits">
@@ -95,19 +160,27 @@
         </ul>
       </section>
 
-      <section class="feinman">
-        <h2 class="feynman__title">Метод Фейнмана</h2>
-        <p class="feynman__subtitle">Выучить и не забыть</p>
-        <a class="feynman__link" href="#">Подробнее&rarr;</a>
-        <div class="feynman__image"></div>
+      <section class="khan">
+        <div class="khan__container">
+          <p class="khan__author">Салман Хан</p>
+          <h2 class="khan__title">Весь мир — школа</h2>
+          <p class="khan__quote">Страсть и новаторство Сала Хана меняют процесс обучения
+            миллионов студентов по всему миру. Книгу «Весь мир — школа»
+            нужно прочитать всем, кто занимается образованием — так
+            учащиеся повсюду смогут получить навыки и знания, которые
+            приносят успех в школе, карьере и жизни.</p>
+          <h4 class="khan__quote-author">Джордж Лукас</h4>
+          <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
+          <div class="khan__book-container">
+            <img class="khan__book-pic" src="images/khan-book.jpg" alt="picture of the Salmans Khans book">
+            <a class="khan__buy-link all-links-transition" href="#">Купить книгу&rarr;</a>
+          </div>
+        </div>
       </section>
 
       <section class="kaufman">
         <h2 class="section-title section-title_theme_dark">Принципы обучения</h2>
         <p class="section-subtitle section-subtitle_theme_dark">от Джоша Кауфмана</p>
-
-<!-- Мне первый вариант тоже больше нравился - выполняю ваше пожелание "можно лучше" -->
-
         <ol class="table table_theme_dark">
           <li class="table__heading table__cell table__cell_theme_dark">
             <p class="table__text table__text_theme_dark">Выберите привлекательный проект.</p>
@@ -140,12 +213,21 @@
             <p class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</p>
           </li>
         </ol>
-        <div class="kaufman__triangle"></div>
+        <div class="kaufman__triangle blocks-rotation"></div>
+      </section>
+
+      <section class="resources">
+        <h2 class="section-title section-title_line_height">Полезные ресурсы</h2>
+        <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
+        <ul class="resources__logo-zone list-reset-stiles">
+          <li><a class="all-links-transition" href="#"><img class="resources__logo" src="images/resources-arzamas.svg" alt="resources-arzamas logo"></a></li>
+          <li><a class="all-links-transition" href="#"><img class="resources__logo" src="images/resources-n1.svg" alt="resources-n1 logo"></a></li>
+          <li><a class="all-links-transition" href="#"><img class="resources__logo" src="images/resources-strelka.svg" alt="resources-strelka logo"></a></li>
+          <li><a class="all-links-transition" href="#"><img class="resources__logo" src="images/resources-polka.svg" alt="resources-polka logo"></a></li>
+        </ul>
       </section>
 
     </main>
-
-<!--По блоку "footer" оставил комментарии в файле стилей-->
 
     <footer class="footer">
       <div class="footer__columns">
@@ -156,25 +238,17 @@
         <nav class="footer__column footer__column_content_info">
           <h4 class="footer__column-heading">О Практикуме</h4>
           <ul class="footer__column-links">
-
-<!-- Вы писали - "1. БЭМ сущность footer__column-row-bottom-margin не объявлена в брифе, необходимо ее
-  удалить во всем блоке 2. БЭМ сущность footer__column-links-a не объявлена в брифе, необходимо ее удалить
-  во всем блоке" - т.е. мне оставить стандартные теги без привязки к классам? Пока просто переименовал свои
-  классы в другие. Оперировать буду только теми, что в брифе, но ссылки, насколько понимаю, все равно придется
-  переопределить по цвету и убрать подчеркивание и все равно придется к ним как-то обращаться (по какому-то
-  селектору класса или тега - или я не прав?) -->
-
-            <li class="footer__column-infopart"><a class="footer__column-infolink" href="#">Главная</a></li>
-            <li class="footer__column-infopart"><a class="footer__column-infolink" href="#">Концепция</a></li>
-            <li class="footer__column-infopart"><a class="footer__column-infolink" href="#">Наставники</a></li>
+            <li class="footer__column-infopart"><a class="footer__column-infolink all-links-transition" href="#">Главная</a></li>
+            <li class="footer__column-infopart"><a class="footer__column-infolink all-links-transition" href="#">Концепция</a></li>
+            <li class="footer__column-infopart"><a class="footer__column-infolink all-links-transition" href="#">Наставники</a></li>
           </ul>
         </nav>
         <nav class="footer__column footer__column_content_social">
           <h4 class="footer__column-heading">Соцсети</h4>
           <ul class="footer__social-icon">
-            <li class="footer__column-socialpart"><a class="footer__icon-sociallink" href="#"><img class="footer__social-icon-img" src="images/facebook_color_white.svg" alt="facebook logo">Facebook</a></li>
-            <li class="footer__column-socialpart"><a class="footer__icon-sociallink" href="#"><img class="footer__social-icon-img" src="images/vk_color_white.svg" alt="facebook logo">ВКонтакте</a></li>
-            <li class="footer__column-socialpart"><a class="footer__icon-sociallink" href="#"><img class="footer__social-icon-img" src="images/instagram_color_white.svg" alt="instagram logo">Instargam</a></li>
+            <li class="footer__column-socialpart"><a class="footer__icon-sociallink all-links-transition" href="#"><img class="footer__social-icon-img" src="images/facebook_color_white.svg" alt="facebook logo">Facebook</a></li>
+            <li class="footer__column-socialpart"><a class="footer__icon-sociallink all-links-transition" href="#"><img class="footer__social-icon-img" src="images/vk_color_white.svg" alt="facebook logo">ВКонтакте</a></li>
+            <li class="footer__column-socialpart"><a class="footer__icon-sociallink all-links-transition" href="#"><img class="footer__social-icon-img" src="images/instagram_color_white.svg" alt="instagram logo">Instargam</a></li>
           </ul>
         </nav>
       </div>

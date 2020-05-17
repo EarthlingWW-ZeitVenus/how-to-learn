@@ -12,6 +12,6 @@ to {
 }
 }
 
-.blocks-rotation {
+.rotation {
   animation: block-rotate 20s linear infinite;
 }

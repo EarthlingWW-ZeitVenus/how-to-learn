@@ -10,17 +10,28 @@
   <!-- <link rel="stylesheet" href="styles/style.css"> -->
 </head>
 
+<!--Все замечания "надо исправить" исправил, "надо лучше" буду уже доделывать после 22:00-->
+
+<!-- TODO: поменять blocks-rotation на rotation + -->
+
+<!-- TODO: поменять все alt на русский язык, попытаться изобразить там больше осмысленности + -->
+
+<!-- TODO (Удалить section-title_line_height):
+        1. Удалить в файле index.html +
+        2. Удалить папку и все файлы section-title_line_height +
+        3. Удалить путь import в файле section-title + -->
+
 <body>
 
   <div class="page">
 
     <header class="header">
       <h1 class="header__title">Hаучиться учиться</h1>
-        <img class="logo logo_place_header" src="images/logo_place_header.svg" alt="header logo">
+        <img class="logo logo_place_header" src="images/logo_place_header.svg" alt="логотип шапки сайта">
         <p class="header__subtitle">Какие современные и эффективные подходы к обучению вы
           можете использовать в своей жизни? <a class="header__link all-links-transition" href="#">Узнать &rarr;</a></p>
-      <img class="header__main-illustration" src="images/header-image.png" alt="header main illustration">
-      <div class="header__square-pic blocks-rotation"></div>
+      <img class="header__main-illustration" src="images/header-image.png" alt="главная иллюстрация шапки сайта">
+      <div class="header__square-pic rotation"></div>
     </header>
 
     <main class="content">
@@ -49,34 +60,34 @@
       </section>
 
       <section class="techniques">
-        <h2 class="section-title section-title_line_height">Техники обучения</h2>
+        <h2 class="section-title">Техники обучения</h2>
         <p class="section-subtitle">Пять практик от Барбары Оакли</p>
         <ul class="cards">
           <li class="cards__item">
-            <img class="cards__image" src="images/cards-attention.png" alt="image cards-attention">
+            <img class="cards__image" src="images/cards-attention.png" alt="картинка карточки, с названием cards-attention">
             <h4 class="cards__title">Два вида внимания</h4>
             <p class="cards__description">Глубокие знания возникают, если чередовать сфокусированное и рассеянное
                 мышление.</p>
           </li>
           <li class="cards__item">
-            <img class="cards__image" src="images/cards-recall.png" alt="image cards-recall">
+            <img class="cards__image" src="images/cards-recall.png" alt="картинка карточки, с названием image cards-recall">
             <h4 class="cards__title">Recall</h4>
             <p class="cards__description">Вспоминайте изученное — это позволит соединить разрозненные порции
                 памяти.</p>
           </li>
           <li class="cards__item">
-            <img class="cards__image" src="images/cards-interliving.png" alt="image cards-interliving">
+            <img class="cards__image" src="images/cards-interliving.png" alt="картинка карточки, с названием cards-interliving">
             <h4 class="cards__title">Интерливинг</h4>
             <p class="cards__description">Изучайте несколько навыков одновременно, они обогащают друг друга.</p>
           </li>
           <li class="cards__item">
-            <img class="cards__image" src="images/cards-question.png" alt="image cards-question">
+            <img class="cards__image" src="images/cards-question.png" alt="картинка карточки, с названием cards-question">
             <h4 class="cards__title">Вопросы</h4>
             <p class="cards__description">Слушая преподавателя, придумывайте хороший вопрос, который вас
                 действительно волнует.</p>
           </li>
           <li class="cards__item">
-            <img class="cards__image" src="images/cards-competence.png" alt="image cards-competence">
+            <img class="cards__image" src="images/cards-competence.png" alt="картинка карточки, с названием cards-competence">
             <h4 class="cards__title">Иллюзия компетентности</h4>
             <p class="cards__description">Повторите про себя, запишите, расскажите другу: вам только кажется,
                 что вы владеете новой темой.</p>
@@ -84,13 +95,14 @@
         </ul>
       </section>
 
+      <!-- TODO: Удалить ширину и высоту в iframe + -->
+
       <section class="video">
-        <h2 class="section-title section-title_line_height">Видео на TED</h2>
+        <h2 class="section-title">Видео на TED</h2>
         <p class="section-subtitle">Для тех, кто любит прокрастинировать</p>
         <div class="video__iframes">
-          <!-- <iframe class="video__iframe" width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
-          <iframe class="video__iframe" width="515" height="316" src="https://www.youtube.com/embed/5MgBikgcWnY" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          <iframe class="video__iframe" width="515" height="316" src="https://www.youtube.com/embed/arj7oStGLkU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="video__iframe" src="https://www.youtube.com/embed/5MgBikgcWnY" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe class="video__iframe" src="https://www.youtube.com/embed/arj7oStGLkU" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
       </section>
 
@@ -109,11 +121,18 @@
         </div>
       </section>
 
-      <section class="feinman">
+      <!-- TODO (Исправить feinman на feynman):
+        1. В файле index.html +
+        2. В папках и файлах +
+        3. В адресах import в файле index.css и feYnman.css +
+        4. Изменить название класса в файле feYnman.css +
+        5. Проверить все пути этого блока (т.к. имя папки поменялось)  -->
+
+      <section class="feynman">
         <h2 class="feynman__title">Метод Фейнмана</h2>
         <p class="feynman__subtitle">Выучить и не забыть</p>
         <a class="feynman__link all-links-transition" href="#">Подробнее&rarr;</a>
-        <img class="feynman__image" src="images/feynman.png" alt="feynman image">
+        <img class="feynman__image" src="images/feynman.png" alt="главная картинка секции feynman сайта">
         <!-- <div class="feynman__image"></div> -->
       </section>
 
@@ -169,10 +188,13 @@
             нужно прочитать всем, кто занимается образованием — так
             учащиеся повсюду смогут получить навыки и знания, которые
             приносят успех в школе, карьере и жизни.</p>
-          <h4 class="khan__quote-author">Джордж Лукас</h4>
+
+          <!-- TODO: изменить заголовок h4 на p + -->
+
+          <p class="khan__quote-author">Джордж Лукас</p>
           <p class="khan__quote-author-subline">Кинорежиссер, продюсер</p>
           <div class="khan__book-container">
-            <img class="khan__book-pic" src="images/khan-book.jpg" alt="picture of the Salmans Khans book">
+            <img class="khan__book-pic" src="images/khan-book.jpg" alt="иллюстрация обложки книги Салмана Хана">
             <a class="khan__buy-link all-links-transition" href="#">Купить книгу&rarr;</a>
           </div>
         </div>
@@ -213,42 +235,65 @@
             <p class="table__text table__text_theme_dark">Уделяйте внимание количеству и скорости.</p>
           </li>
         </ol>
-        <div class="kaufman__triangle blocks-rotation"></div>
+        <div class="kaufman__triangle rotation"></div>
       </section>
 
       <section class="resources">
-        <h2 class="section-title section-title_line_height">Полезные ресурсы</h2>
+        <h2 class="section-title">Полезные ресурсы</h2>
         <p class="section-subtitle">Больше материалов о техниках и лайфхаках обучения</p>
-        <ul class="resources__logo-zone list-reset-styles">
-          <li><a class="all-links-transition" href="#"><img class="resources__logo" src="images/resources-arzamas.svg" alt="resources-arzamas logo"></a></li>
-          <li><a class="all-links-transition" href="#"><img class="resources__logo" src="images/resources-n1.svg" alt="resources-n1 logo"></a></li>
-          <li><a class="all-links-transition" href="#"><img class="resources__logo" src="images/resources-strelka.svg" alt="resources-strelka logo"></a></li>
-          <li><a class="all-links-transition" href="#"><img class="resources__logo" src="images/resources-polka.svg" alt="resources-polka logo"></a></li>
+
+        <!-- TODO (Cделать ссылку частью блока resources, создать класс resources__link):
+        1. создать папку и файл +
+        2. прописать класс в файле resources__link.css +
+        3. import в файле resources.css + -->
+
+        <ul class="resources__logo-zone">
+          <li><a class="resources__link all-links-transition" href="#"><img class="resources__logo" src="images/resources-arzamas.svg" alt="логотип ссылки источника допольнительных материалов - Arzamas"></a></li>
+          <li><a class="resources__link all-links-transition" href="#"><img class="resources__logo" src="images/resources-n1.svg" alt="логотип ссылки источника допольнительных материалов - N+1"></a></li>
+          <li><a class="resources__link all-links-transition" href="#"><img class="resources__logo" src="images/resources-strelka.svg" alt="логотип ссылки источника допольнительных материалов - Strelka"></a></li>
+          <li><a class="resources__link all-links-transition" href="#"><img class="resources__logo" src="images/resources-polka.svg" alt="логотип ссылки источника допольнительных материалов - Полка"></a></li>
         </ul>
       </section>
 
     </main>
 
+    <!-- TODO (поменять класс footer__column-infolink на footer__column-link):
+        1. переименовать в файле index.html +
+        1. переименовать папки и файлы +
+        2. переименовать класс в файле footer__column-link.css +
+        3. Переделать пути import в файле footer.css + -->
+
+        <!-- TODO (поменять класс footer__icon-sociallink на footer__column-link):
+        1. переименовать в файле index.html +
+        2. удалить папки и файлы +
+        3. удалить ненужный путь import в файле footer.css + -->
+
+        <!-- TODO (поменять класс footer__column-socialpart на footer__column-infopart):
+        1. переименовать в файле index.html +
+        2. удалить ненужные папки и файлы +
+        3. удалить ненужный путь import в файле footer.css + -->
+
+
     <footer class="footer">
       <div class="footer__columns">
         <div class="footer__column footer__column_content_copyright">
-          <img class="logo logo_place_footer" src="images/logo_place_footer.svg" alt="footer logo">
+          <img class="logo logo_place_footer" src="images/logo_place_footer.svg" alt="логотип подвала сайта">
           <p class="footer__author">&copy; 2019. Виктор Абанькин</p>
         </div>
         <nav class="footer__column footer__column_content_info">
           <h4 class="footer__column-heading">О Практикуме</h4>
           <ul class="footer__column-links">
-            <li class="footer__column-infopart"><a class="footer__column-infolink all-links-transition" href="#">Главная</a></li>
-            <li class="footer__column-infopart"><a class="footer__column-infolink all-links-transition" href="#">Концепция</a></li>
-            <li class="footer__column-infopart"><a class="footer__column-infolink all-links-transition" href="#">Наставники</a></li>
+            <li class="footer__column-infopart"><a class="footer__column-link all-links-transition" href="#">Главная</a></li>
+            <li class="footer__column-infopart"><a class="footer__column-link all-links-transition" href="#">Концепция</a></li>
+            <li class="footer__column-infopart"><a class="footer__column-link all-links-transition" href="#">Наставники</a></li>
           </ul>
         </nav>
         <nav class="footer__column footer__column_content_social">
           <h4 class="footer__column-heading">Соцсети</h4>
           <ul class="footer__social-icon">
-            <li class="footer__column-socialpart"><a class="footer__icon-sociallink all-links-transition" href="#"><img class="footer__social-icon-img" src="images/facebook_color_white.svg" alt="facebook logo">Facebook</a></li>
-            <li class="footer__column-socialpart"><a class="footer__icon-sociallink all-links-transition" href="#"><img class="footer__social-icon-img" src="images/vk_color_white.svg" alt="facebook logo">ВКонтакте</a></li>
-            <li class="footer__column-socialpart"><a class="footer__icon-sociallink all-links-transition" href="#"><img class="footer__social-icon-img" src="images/instagram_color_white.svg" alt="instagram logo">Instargam</a></li>
+            <li class="footer__column-infopart"><a class="footer__column-link all-links-transition" href="#"><img class="footer__social-icon-img" src="images/facebook_color_white.svg" alt="логотип социальной сети - Facebook">Facebook</a></li>
+            <li class="footer__column-infopart"><a class="footer__column-link all-links-transition" href="#"><img class="footer__social-icon-img" src="images/vk_color_white.svg" alt="логотип социальной сети - ВКонтакте">ВКонтакте</a></li>
+            <li class="footer__column-infopart"><a class="footer__column-link all-links-transition" href="#"><img class="footer__social-icon-img" src="images/instagram_color_white.svg" alt="логотип социальной сети - Instagram">Instargam</a></li>
           </ul>
         </nav>
       </div>

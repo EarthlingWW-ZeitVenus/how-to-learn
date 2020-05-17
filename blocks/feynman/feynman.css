@@ -5,7 +5,7 @@
 
 .feynman {
   padding-top: 80px;
-  height: 790px;
+  min-height: 790px;
   position: relative;
   background-color: #f2f2f2;
   /* z-index: -2; */

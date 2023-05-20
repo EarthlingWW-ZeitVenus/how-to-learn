@@ -1,18 +1,17 @@
-# Project work N2 (Yandex Praktikum) - How To Study
+# Яндекс Практикум (Спринт N2) - How To Learn
+## Описание
+### Фунционал:
+Учебный проект для совершенствования навыков веб-программирования. Информационная страница, содержит интересные наблюдения и факты из истории о нюансах процесса обучения.
+### Внешний вид и верстка:
+При нажатиях/наведении на кнопки/иконки/картинки присутствуют эффекты переходов и анимация.
+### Используемые технологии:
+HTML, CSS (Grid, Flex, псевдоэлементы), Git
+## Инструкция по развертыванию проекта и системные требования
+Для корректного отображения потребуется наличие одного из браузеров версии не ниже обозначенной:
+* Microsoft Edge 16 ver.
+* Mozilla Firefox 52 ver.
+* Google Chrome 26 ver.
+* Opera 44 ver.
+* Safari 10.1 ver.
+* Samsung Internet 6.2 ver.
 
-## A project that help students improve their web developer skills.
-Such as:
- * layout blocks and elements on web page
- * embed third-party web objects
- * make transform and transition effects
- * make keyframes and animation on pages
- * do other interesting stuff
-
-_In addition to teaching students, the text of the project contains interesting observations and facts from the history of the learning process itself._
-
-## Plans to improve my work project:
- * Change some modificators and make them more independent and then use them globaly for mix with blocks and elements
- * Import or link other fonts to project
- * Add vendors prefix for better compatibility with different browsers
- * Make some forms for feedbacks
- * Make a more complete readme file
